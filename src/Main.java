@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -52,7 +53,7 @@ public class Main {
             }
             numero++;
 
-        }*/
+        }
         //Ejercicio 12
         int numero = 0;
         while (numero <= 100) {
@@ -62,5 +63,48 @@ public class Main {
             numero++;
 
         }
+
+        for (int i = 1; i <= 4; i++) {
+            for (int j = i; j < 4; j++) {
+                System.out.print(" ");
+            }
+                    for (int j = 1; j <= (2 * i - 1); j++) {
+                    System.out.print("*");
+            }
+                    System.out.println();
+        }
+    }
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+        Random random = new Random();
+        for (int i = 0; i < 10; i++) {
+            char letra = (char) ('A' + random.nextInt(26)); // genera de 'A' a 'Z'
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+                System.out.println("La letra " + letra + " Es vocal");
+            } else {
+                System.out.println("La letra " + letra + " Es consonante");
+            }
+        }*/
+
+
+        Scanner mp = new Scanner(System.in);
+        System.out.println("pon un tiempo en segundos");
+        int timepo = 23423;
+        int minutos = 0;
+        int horas = 0;
+        for (int i = 0; i <= timepo; i++) {
+            if(timepo > 60){
+                minutos = minutos + 1;
+            }
+
+        }
+        horas = horas + 1;
+        System.out.println("Tiempo: " + minutos + " minutos");
+
+
+
     }
 }
